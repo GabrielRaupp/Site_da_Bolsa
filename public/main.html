@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Abelhas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Certifique-se de ter um arquivo de estilo -->
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Cria a estrutura principal
+            const mainArea = document.createElement('div');
+            mainArea.className = 'main-area';
+
+            const beeTheme = document.createElement('div');
+            beeTheme.className = 'bee-theme';
+
+            const title = document.createElement('h1');
+            title.textContent = 'Projeto Abelhas';
+
+            const description = document.createElement('p');
+            description.textContent = 'Nosso projeto é dedicado ao estudo de abelhas, explorando seu comportamento, a importância na polinização, e os impactos ambientais que afetam suas populações. Utilizamos dados de telemetria para monitorar as condições ambientais e avaliar como fatores como temperatura, umidade e pressão influenciam suas atividades.';
+
+            const link = document.createElement('a');
+            link.href = 'index.html'; // Mantido para acessar os gráficos
+            link.className = 'link-graficos';
+            link.textContent = 'Veja os Gráficos';
+
+            // Botão para voltar aos gráficos
+            const button = document.createElement('button');
+
+
+            // Anexa os elementos ao DOM
+            beeTheme.appendChild(title);
+            beeTheme.appendChild(description);
+            beeTheme.appendChild(link);
+            beeTheme.appendChild(button); // Anexa o botão
+            mainArea.appendChild(beeTheme);
+
+            // Adiciona a estrutura ao body do documento
+            document.body.appendChild(mainArea);
+        });
+    </script>
+</body>
+</html>
